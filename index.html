@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blogging website</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" /> 
+</head>
+<body>  
+ 
+  <div class = "login">
+    <h1 class="website-title">Techie Talk</h1>
+    <h2> Log In</h2>
+    <input type = "text" id="email" placeholder="Enter Email" autocomplete="off"/>
+    <input type = "password" id="password" placeholder="Enter password" autocomplete="off"/>
+    <button id="sign_in">Login</button>
+  </div>
+ 
+
+  <div id="notify" class="notifi" style="display: none;"></div>
+  <!--my blog area admin-->
+  <div class = "my_blog">
+    <header>
+      <nav>
+
+         <div class="logo">
+          <img src="logo2.jpg" alt="Logo" style="height: 60px;"></div>
+         <ul>
+          <li><a class ="active" href="#">Home</a></li>
+           <li><a href="about.html">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#" id="logout">Logout</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+<div class="notifi"></div>
+
+<div class="container main">
+  <div class="main_content">
+
+    <!--post form-->
+    <div class="post_form">
+      <label>Title</label>
+      <input type="text" id="title" placeholder="Enter Title"/>
+      <label>Your Post</label>
+      <textarea name ="" id= "post_content" cols="20" rows="10"></textarea>
+      <button id = "post_btn" class ="post_btn">Post Now</button>
+      <button id = "update_btn" class="update_btn">Update Post</button>
+    </div>
+    <!--table-->
+    <div class="my_content">
+      <h2>My Posts</h2>
+      <table>
+        
+      </table>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- CONTACT SECTION -->
+    <div class="footer-section">
+      <h3>CONTACT US</h3>
+      <p>Email: <a href="mailto:rounak302@gmail.com">jrounak302@gmail.com</a></p>
+      <p>Phone: <a href="tel:+918529613941">+91 85596 13921</a></p>
+      <p>Address: 123 Main Street, Jaipur<br>Pincode - 302001</p>
+    </div>
+
+    <!-- QUICK LINKS SECTION -->
+    <div class="footer-section">
+      <h3>QUICK LINKS</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="create.html">Create Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL MEDIA SECTION -->
+    <div class="footer-section">
+      <h3>FOLLOW US</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <p class="copyright">&copy; 2025 TECHIE TALK. Created by Rounak Jain. All rights reserved.</p>
+</footer> 
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
